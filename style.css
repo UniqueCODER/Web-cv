@@ -51,7 +51,7 @@ a{
 #main h1{
     color: transparent;
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     animation: text_reveal 1s ease forwards;
     animation-delay: 1.5s;
@@ -100,6 +100,45 @@ main h1:nth-child(2){
 }
 /* end: Main section */
 
+/* Skills and Abilities */
+#skills{
+    
+}
+#skills .skills{
+    text-align: center;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}
+#skills .section-title{
+    font-size: 4rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing:.2rem;
+    text-align: center;
+}
+#skills .section-title span{
+    color:#306998;
+}
+#skills .skills-top{
+    color:#306998;
+    font-size: 1.4 rem;
+    margin-top: 5px;
+    line-height: 2rem;
+    font-weight: 200px;
+    letter-spacing:  .05rem;
+}
+#skills .skills-bot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* end of Skills and Abilities */
 /* kframes*/
 @keyframes text_reveal_box{
     50%{
