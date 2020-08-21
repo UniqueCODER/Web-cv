@@ -42,23 +42,56 @@ a{
     z-index: -1;
         
 }
+#main .main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
 #main h1{
-    color: #306998;
+    color: transparent;
     display: block;
     font-size: 4rem;
     position: relative;
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 1.5s;
+}
+#main h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+main h1:nth-child(2){
+    animation-delay: 3s;
+}
+#main h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color:#306998;
+    animation: text_reveal_box 1s ease;
+	animation-delay: 1s;   
+}
+#main h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+#main h1:nth-child(2) span {
+    animation-delay: 2s;
 }
 #main .cta{
     display: inline-block;
     padding: 10px 18px;
+    color: white;
     background-color: transparent;
-    color: #646464;
+    color: #306998;
     border: 1px solid #646464;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 30px;
     transition: .3s ease background-color;
+    transition-property: background-color, color;
+    
     
 }
 #main .cta:hover{
@@ -66,3 +99,25 @@ a{
     background-color: #646464;
 }
 /* end: Main section */
+
+/* kframes*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+        
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+        
+        
+    }
+    
+}
