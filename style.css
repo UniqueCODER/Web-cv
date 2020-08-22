@@ -138,6 +138,20 @@ main h1:nth-child(2){
     justify-content: center;
     flex-wrap: wrap;
 }
+#skills .skills-item{
+    flex: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction:column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(img/bg1.jpg);
+    background-size:cover;
+    margin: 20px 5%;
+    color: white;
+}
+
 /* end of Skills and Abilities */
 /* kframes*/
 @keyframes text_reveal_box{
