@@ -234,7 +234,42 @@ main h1:nth-child(2){
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-color:#ADD8E6; 
+    background-color:#ADD8E6;
+    
+}
+#projects .projects-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+#projects .projects-info h2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#projects .projects-info p{
+    font-size:1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#projects .projects-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .projects-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    
+    height: 100%;
+    width: 100%;
+    background-color: #306998;
+    opacity: .3;
+}
+#projects:hover .projects-img img{
+    transform: scale(1.1);
 }
 /* end of SProjects and Capstone */
 
