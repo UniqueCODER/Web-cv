@@ -262,16 +262,35 @@ main h1:nth-child(2){
     position: absolute;
     left: 0;
     top:0;
-    
     height: 100%;
     width: 100%;
     background-color: #306998;
     opacity: .3;
 }
-#projects:hover .projects-img img{
-    transform: scale(1.1);
-}
+
+
 /* end of SProjects and Capstone */
+/* About me */
+#about .about{
+    flex-direction: column-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    
+}
+#about .col-left {
+    width: 250px;
+    height: 360px;
+    
+}
+#about img{
+    width: 300px;
+}
+#about .col-right{
+    width: 100%;
+   
+    
+}
 
 /* kframes*/
 @keyframes text_reveal_box{
